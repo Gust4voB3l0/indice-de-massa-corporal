@@ -1,0 +1,14 @@
+peso = float(input('Qual é o seu peso? (Kg) '))
+altura = float(input('Qual é a sua altura: '))
+inc = peso / (altura ** 2)
+print('O IMC dessa pessoa é de {:.1f}'.format(inc))
+if inc < 18.2:
+    print('\033[30mVocê está ABAIXO DO SEU PESO normal')
+elif 18.2 <=inc < 25:
+    print('\033[32mPARABÉNS, você está na faixa de PESO NORMAL ')
+elif 25 <= inc < 30:
+    print('\033[33mVocê está em SOBREPESO')
+elif 30<= inc < 40:
+    print('Você está em OBESIDADE!')
+elif inc >= 40:
+    print('\033[31mVocê está em OBESIDADE MÓRBIDA, cuidado!')
